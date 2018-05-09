@@ -1,9 +1,9 @@
 html {
   font-size: 18px;
-  line-height: 1.4;
 }
 body {
   font-family: Helvetica;
+  line-height: 1.4;
 }
 /* Header Section */
 header {
@@ -31,6 +31,8 @@ header {
   padding: 1rem;
 }
 .logo_container img {
+  display: flex;
+  align-items: center;
   height: 1.5rem;
   padding: 1rem;
 }
@@ -40,6 +42,7 @@ header {
 .menu_items {
   display: inline-block;
   padding: 0 1rem;
+
 }
 .hero_container {
   background-color: white;
@@ -70,7 +73,6 @@ h2 {
   justify-content: space-between;
   margin: 3rem;
   width: 5rem;
-  height: 8rem;
   text-align: center;
 }
 .paper-icon {
@@ -83,14 +85,45 @@ h2 {
 .image_container img {
   margin-bottom: 1rem;
 }
-.service_text {
-  vertical-align: bottom;
+
+/* About Section */
+#about {
+  display: flex;
+  justify-content: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.about_container {
+  width: 35%;
+  margin-right: 5%;
+}
+.about_container h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  max-width: 10rem;
+  color: white;
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+}
+.about_container p {
+  padding: 1rem 0;
 }
 
-
-
-
-
-
+/* Footer Section */
+footer {
+  background-color: azure;
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3rem 2rem;
+}
+footer img {
+  margin-left: 1rem;
+}
 
 /*  */
