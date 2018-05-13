@@ -170,9 +170,6 @@ footer {
   .services {
     flex-wrap: wrap;
   }
-  .service_container:nth-of-type(3) {
-    margin-top: 0;
-  }
   #about {
     flex-direction: column;
   }
