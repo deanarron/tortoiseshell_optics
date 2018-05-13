@@ -150,16 +150,9 @@ footer {
     font-size: 1.33rem;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width:768px) {
   header {
-    height: 17rem;
     background-position: 20%;
-  }
-  .desktop_view {
-    display: none;
-  }
-  .mobile_view {
-    display: inline-block;
   }
   .company_name_container h1 {
     display: none;
@@ -167,7 +160,7 @@ footer {
   .hero_container {
     width: 100%;
     margin-right: 0;
-    margin-top: 9rem;
+    margin-top: 14rem;
     padding: 0;
     text-align: center;
   }
@@ -175,17 +168,10 @@ footer {
     font-size: 1rem;
   }
   .services {
-    flex-direction: column;
-    align-items: center;
-    margin: 3.77rem 0;
+    flex-wrap: wrap;
   }
-  .service_container {
-    margin: 0.77rem;
-    max-width: 5rem;
-    height: 100%;
-  }
-  .service_text {
-    font-size: 0.77rem;
+  .service_container:nth-of-type(3) {
+    margin-top: 0;
   }
   #about {
     flex-direction: column;
@@ -200,8 +186,7 @@ footer {
     text-align: center;
   }
   .about_container p {
-    font-size: 0.77rem;
-    margin: 0 0.33rem;
+    margin: 0 1rem;
     margin-bottom: 4rem;
   }
   footer {
@@ -209,6 +194,40 @@ footer {
   }
   .footer_container {
     margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+  .desktop_view {
+    display: none;
+  }
+  .mobile_view {
+    display: inline-block;
+  }
+  .hero_container {
+    margin-top: 9rem;
+  }
+  .services {
+    flex-direction: column;
+    align-items: center;
+    margin: 3.77rem 0;
+  }
+  .service_container {
+    margin: 0.77rem;
+    max-width: 5rem;
+    height: 100%;
+  }
+  .service_text {
+    font-size: 0.77rem;
+  }
+  .about_container p {
+    font-size: 0.77rem;
+    margin: 0 0.33rem;
+    margin-bottom: 4rem;
   }
   .footer_container img {
     margin: auto;
