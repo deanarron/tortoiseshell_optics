@@ -15,3 +15,205 @@ header {
   background-repeat: no-repeat;
   padding-top: 1rem;
 }
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+.flex_container {
+  display: flex;
+  flex-direction: column;
+}
+.banner_container {
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+}
+.banner_container img {
+  height: 1.5rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.company_name_container {
+  flex-grow: 1;
+}
+.mobile_view {
+  display: none;
+}
+.menu_items {
+  margin-right: 2rem;
+}
+.hero_container {
+  align-self: flex-end;
+  background-color: white;
+  padding: 1.5rem 5rem;
+  margin-right: -2rem;
+  margin-top: 10rem;
+}
+.tag_line h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+/* Services Section */
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.service_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 3rem;
+  max-width: 5rem;
+  height: 8rem;
+}
+.image_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.image_container img {
+  margin-bottom: 1rem;
+}
+.paper-icon {
+  width: 3.5rem;
+}
+.ruler-icon {
+  width: 5rem;
+}
+.truck-icon {
+  width: 5rem;
+}
+
+/* About Section */
+#about {
+  display: flex;
+  justify-content: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.about_container {
+  width: 35%;
+  margin-right: 5%;
+}
+.about_container h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  max-width: 12.5rem;  /* Note: due to box-sizing, 10rem doesn't meet the redline design */
+  margin-bottom: 1rem;
+}
+/* footer */
+footer {
+  margin: 0 auto;
+  width: 1032px;
+}
+
+.footer_container {
+  background-color: azure;
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+  margin-top: 5rem;
+}
+.footer_container img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+/* Media Queries */
+@media only screen and (max-width: 1024px) {
+  header {
+    padding-top: 0;
+    height: 22rem;
+  }
+  .container {
+    max-width:none;
+  }
+  .hero_container {
+    margin-top: 5rem;
+    margin-right: 2rem;
+    padding: 0.75rem 4rem;
+  }
+  .tag_line h2 {
+    font-size: 1.33rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+  .desktop_view {
+    display: none;
+  }
+  .mobile_view {
+    display: inline-block;
+  }
+  .company_name_container h1 {
+    display: none;
+  }
+  .hero_container {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 9rem;
+    padding: 0;
+    text-align: center;
+  }
+  .tag_line h2 {
+    font-size: 1rem;
+  }
+  .services {
+    flex-direction: column;
+    align-items: center;
+    margin: 3.77rem 0;
+  }
+  .service_container {
+    margin: 0.77rem;
+    max-width: 5rem;
+    height: 100%;
+  }
+  .service_text {
+    font-size: 0.77rem;
+  }
+  #about {
+    flex-direction: column;
+  }
+  .about_container {
+    width: 100%;
+  }
+  .about_container h3 {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+  .about_container p {
+    font-size: 0.77rem;
+    margin: 0 0.33rem;
+    margin-bottom: 4rem;
+  }
+  footer {
+    width: 100%;
+  }
+  .footer_container {
+    margin: 0 auto;
+  }
+  .footer_container img {
+    margin: auto;
+  }
+  .footer_text {
+    display: none;
+  }
+}

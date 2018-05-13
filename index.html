@@ -9,36 +9,36 @@
   </head>
   <body>
     <header>
-      <div class="flex_container">
+      <div class="flex_container container">
         <!-- Start Banner Container -->
         <div class="banner_container">
-          <div class="logo_container">
             <img alt="Tortoiseshell Optics Logo" src="resources/images/logo-white.png" />
-          </div>
 
           <div class="company_name_container">
-            <h1 class="company_name">Tortoiseshell Optics</h1>
+            <h1 class="company_name menu_items">Tortoiseshell Optics</h1>
           </div>
 
-          <nav>
+          <nav class="desktop_view">
             <span class="menu_items">Services</span>
             <span class="menu_items">Products</span>
             <span class="menu_items">Contact</span>
           </nav>
+          <nav class="mobile_view">
+            <span class="menu_items">Menu</span>
+          </nav>
         </div> <!-- End Banner Container -->
-        <div class="flex_container">
+
           <div class="hero_container">
             <div class="tag_line">
               <h2>Don't just look, see.</h2>
             </div>
           </div> <!-- End hero container -->
-        </div>
       </div>
     </header>
 
     <main>
       <!-- Start services section -->
-      <section class="services">
+      <section class="services container">
         <div class="service_container">
           <div class="image_container">
             <img alt="Comprehensive Exams icon" src="resources/images/paper-icon.png" class="paper-icon" />
@@ -81,12 +81,11 @@
     </main>
 
     <footer>
-      <div class="logo_container">
+      <div class="footer_container">
         <img alt="Tortoiseshell Optics Logo" src="resources/images/logo-black.png" />
-      </div>
-
-      <div class="footer_text">
-        <span>Copyright Tortoiseshell Optics</span>
+        <div class="footer_text">
+          <span>Copyright Tortoiseshell Optics</span>
+        </div>
       </div>
     </footer>
   </body>
